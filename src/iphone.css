@@ -1,0 +1,45 @@
+/* Forcer les styles iPhone */
+* {
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+body {
+  padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+  overscroll-behavior-y: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.fixed-bottom {
+  padding-bottom: calc(0.75rem + env(safe-area-inset-bottom));
+}
+
+/* Masquer scrollbars sur les éléments avec défilement horizontal */
+.scrollbar-hide, div[class*="overflow-x-auto"] {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scrollbar-hide::-webkit-scrollbar, div[class*="overflow-x-auto"]::-webkit-scrollbar {
+  display: none;
+}
+
+/* Agrandir les zones tactiles */
+button, a, [role="button"], input, select, .touch-manipulation {
+  min-height: 44px;
+  min-width: 44px;
+}
+
+/* Safari-specific fixes */
+@supports (-webkit-touch-callout: none) {
+  button {
+    -webkit-appearance: none;
+  }
+}
+
+/* iPhone SE et autres petits écrans */
+@media screen and (max-width: 375px) {
+  .text-xs {
+    font-size: 0.7rem;
+  }
+}

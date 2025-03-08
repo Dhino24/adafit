@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+//import './styles.css'; // Notre nouveau fichier CSS avec les styles standards
+import './App.css';    // Garder App.css si vous avez des styles spécifiques
+
+// Importer le composant AppAdaFiT
+import AppAdaFiT from './AppAdaFiT';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  // Simplement retourner le composant
+  return <AppAdaFiT />;
 }
 
 export default App;
