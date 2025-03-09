@@ -156,7 +156,7 @@ const initProgData = [
 ];
 
 // Infos app et thèmes
-const APP = {name: "FitTrack Diaspora", version: "1.1"};
+const APP = {name: "AdaFiT", version: "1.1"};
 const themes = {
   program: {
     primary: 'from-indigo-600 to-blue-500',
