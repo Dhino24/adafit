@@ -1,1 +1,43 @@
-'{  "name": "AdaFiT",  "short_name": "AdaFiT",  "start_url": ".",  "display": "standalone",  "theme_color": "#4f46e5",  "background_color": "#ffffff",  "icons": [    {"src":"/icon.png","sizes":"192x192","type":"image/png"}  ]}' 
+{
+  "short_name": "AdaFiT",
+  "name": "AdaFiT - Suivi Fitness",
+  "description": "App de fitness intégrant culture sénégalaise",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "logo512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#4f46e5",
+  "background_color": "#ffffff",
+  "orientation": "portrait",
+  "scope": "/",
+  "categories": ["fitness", "health", "lifestyle"],
+  "shortcuts": [
+    {
+      "name": "Programme",
+      "url": "/?t=program",
+      "icons": [{"src": "icons/program.png", "sizes": "96x96"}]
+    },
+    {
+      "name": "Nutrition",
+      "url": "/?t=nutrition",
+      "icons": [{"src": "icons/nutrition.png", "sizes": "96x96"}]
+    }
+  ],
+  "lang": "fr-FR"
+}
